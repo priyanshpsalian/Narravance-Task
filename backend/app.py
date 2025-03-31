@@ -30,7 +30,7 @@ def process_jobs():
             task.status = "in progress"
             db.session.commit()
             merged_data = fetch_and_merge_data(json.loads(task.filters))
-
+            time.sleep(10)
             print(f"Fetched {len(merged_data)} records for task {task_id}")
 
             valid_data = []

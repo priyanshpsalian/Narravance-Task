@@ -340,7 +340,6 @@ const App = () => {
     <div
       className={`${darkMode ? "bg-dark text-light" : "bg-light text-dark"}`}
     >
-
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container">
           <a className="navbar-brand" href="/">
@@ -383,7 +382,6 @@ const App = () => {
             </div>
           </div>
         </div>
-
 
         <div className="card mb-4 shadow">
           <div className="card-body">
@@ -449,8 +447,7 @@ const App = () => {
           </div>
         </div>
 
-        {loading && <p className="text-center fs-4">Loading...</p>}
-
+        {loading && <p className="text-center fs-4">pending...</p>}
 
         <div className="mb-4 d-flex justify-content-around">
           <select
@@ -476,7 +473,6 @@ const App = () => {
             ))}
           </select>
         </div>
-
 
         <div className="row mb-4">
           <div className="col-md-6">
